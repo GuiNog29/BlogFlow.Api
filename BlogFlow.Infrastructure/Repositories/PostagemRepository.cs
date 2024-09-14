@@ -60,7 +60,7 @@ namespace BlogFlow.Infrastructure.Repositories
             return await _dbContext.Postagens.Include(p => p.Usuario).ToListAsync();
         }
 
-        public async Task<IEnumerable<Postagem>> ListarPostagemUsuario(int usuarioId)
+        public async Task<IEnumerable<Postagem>> ListarPostagensUsuario(int usuarioId)
         {
             return await _dbContext.Postagens.Include(p => p.Usuario).Where(p => p.UsuarioId == usuarioId).ToListAsync();
         }

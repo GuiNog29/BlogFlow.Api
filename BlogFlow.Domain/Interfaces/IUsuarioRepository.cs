@@ -8,6 +8,6 @@ namespace BlogFlow.Domain.Interfaces
         Task<Usuario?> Visualizar(int usuarioId);
         Task<bool> Editar(Usuario usuario);
         Task<bool> Excluir(int usuarioId);
-        Task<IEnumerable<Usuario>> Listar(int usuarioId);
+        Task<IEnumerable<Usuario>> Listar();
     }
 }

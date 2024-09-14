@@ -1,6 +1,7 @@
 using DotNetEnv;
 using BlogFlow.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using BlogFlow.Application.Mappings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 var app = builder.Build();
 
