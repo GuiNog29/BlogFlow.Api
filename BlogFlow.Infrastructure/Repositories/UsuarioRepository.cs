@@ -50,8 +50,6 @@ namespace BlogFlow.Infrastructure.Repositories
             if (usuario == null)
                 return false;
 
-            if(usuario.Postagens != null && usuario.Postagens.Any())
-
             _dbContext.Usuarios.Remove(usuario);
             await _dbContext.SaveChangesAsync();
             return true;
