@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogFlow.Api", "BlogFlow.Api\BlogFlow.Api.csproj", "{34A57EDC-14E8-4313-9EBA-BAFB5CA31796}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogFlow.Api", "BlogFlow.Api\BlogFlow.Api.csproj", "{34A57EDC-14E8-4313-9EBA-BAFB5CA31796}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogFlow.Application", "BlogFlow.Application\BlogFlow.Application.csproj", "{0E50CB69-5729-4AEE-9508-6F3BDF56CD33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogFlow.Application", "BlogFlow.Application\BlogFlow.Application.csproj", "{0E50CB69-5729-4AEE-9508-6F3BDF56CD33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogFlow.Domain", "BlogFlow.Domain\BlogFlow.Domain.csproj", "{E3619E76-EAAB-4B35-8602-E89CADA2E8E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogFlow.Domain", "BlogFlow.Domain\BlogFlow.Domain.csproj", "{E3619E76-EAAB-4B35-8602-E89CADA2E8E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogFlow.Infrastructure", "BlogFlow.Infrastructure\BlogFlow.Infrastructure.csproj", "{547DA25B-CF47-44B4-B76E-CC8E35FD4CD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogFlow.Infrastructure", "BlogFlow.Infrastructure\BlogFlow.Infrastructure.csproj", "{547DA25B-CF47-44B4-B76E-CC8E35FD4CD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Presentation", "Infrastructure.Presentation\Infrastructure.Presentation.csproj", "{FD4FC08D-051D-4FF0-A36F-F762F20975BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogFlow.Frontend", "BlogFlow.Frontend\BlogFlow.Frontend.csproj", "{BFB616D6-8CBE-4919-8043-1BFE3FAA0152}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogFlow.Frontend", "BlogFlow.Frontend\BlogFlow.Frontend.csproj", "{BFB616D6-8CBE-4919-8043-1BFE3FAA0152}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogFlow.Presentation", "BlogFlow.Presentation\BlogFlow.Presentation.csproj", "{A1BD9E22-1D5B-481C-9188-AEBD3BA0352E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +37,14 @@ Global
 		{547DA25B-CF47-44B4-B76E-CC8E35FD4CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{547DA25B-CF47-44B4-B76E-CC8E35FD4CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{547DA25B-CF47-44B4-B76E-CC8E35FD4CD9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FD4FC08D-051D-4FF0-A36F-F762F20975BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD4FC08D-051D-4FF0-A36F-F762F20975BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD4FC08D-051D-4FF0-A36F-F762F20975BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD4FC08D-051D-4FF0-A36F-F762F20975BE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BFB616D6-8CBE-4919-8043-1BFE3FAA0152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BFB616D6-8CBE-4919-8043-1BFE3FAA0152}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFB616D6-8CBE-4919-8043-1BFE3FAA0152}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFB616D6-8CBE-4919-8043-1BFE3FAA0152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1BD9E22-1D5B-481C-9188-AEBD3BA0352E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1BD9E22-1D5B-481C-9188-AEBD3BA0352E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1BD9E22-1D5B-481C-9188-AEBD3BA0352E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1BD9E22-1D5B-481C-9188-AEBD3BA0352E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

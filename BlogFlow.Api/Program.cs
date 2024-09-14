@@ -1,4 +1,15 @@
+using DotNetEnv;
+using BlogFlow.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+Env.Load();
+
+var connectionString = $"Server=localhost;Database=blogflowdb;Username=postgres;Password={Environment.GetEnvironmentVariable("DB_PASSWORD")}";
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(connectionString));
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
