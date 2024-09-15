@@ -55,12 +55,12 @@ namespace BlogFlow.Infrastructure.Repositories
             return true;
         }
 
-        public async Task<IEnumerable<Postagem>> Listar()
+        public async Task<IEnumerable<Postagem>?> Listar()
         {
             return await _dbContext.Postagens.Include(p => p.Usuario).ToListAsync();
         }
 
-        public async Task<IEnumerable<Postagem>> ListarPostagensUsuario(int usuarioId)
+        public async Task<IEnumerable<Postagem>?> ListarPostagensUsuario(int usuarioId)
         {
             return await _dbContext.Postagens.Include(p => p.Usuario).Where(p => p.UsuarioId == usuarioId).ToListAsync();
         }

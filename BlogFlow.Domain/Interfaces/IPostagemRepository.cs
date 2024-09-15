@@ -8,7 +8,7 @@ namespace BlogFlow.Domain.Interfaces
         Task<Postagem?> Visualizar(int postagemId);
         Task<bool> Editar(Postagem postagem);
         Task<bool> Excluir(int postagemId);
-        Task<IEnumerable<Postagem>> Listar();
-        Task<IEnumerable<Postagem>> ListarPostagensUsuario(int usuarioId);
+        Task<IEnumerable<Postagem>?> Listar();
+        Task<IEnumerable<Postagem>?> ListarPostagensUsuario(int usuarioId);
     }
 }

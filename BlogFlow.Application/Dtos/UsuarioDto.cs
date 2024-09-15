@@ -1,4 +1,6 @@
-﻿namespace BlogFlow.Application.Dtos
+﻿using System.Text.Json.Serialization;
+
+namespace BlogFlow.Application.Dtos
 {
     public class UsuarioDto
     {
@@ -7,6 +9,7 @@
         public required string Email { get; set; }
         public required string Senha { get; set; }
         public DateTime DataCriacao { get; set; }
-        public ICollection<PostagemDto>? Postagens { get; set; }
+        [JsonIgnore]
+        public ICollection<PostagemDto> Postagens { get; set; } = new List<PostagemDto>();
     }
 }
