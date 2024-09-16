@@ -14,7 +14,7 @@ const Home: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/postagem/listar')
+    axios.get('https://localhost:32775/api/Postagem/Listar')
       .then(response => {
         setPostagens(response.data);
         setLoading(false);

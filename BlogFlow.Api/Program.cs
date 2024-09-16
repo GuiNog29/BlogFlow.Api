@@ -17,7 +17,22 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         npgsqlOptions => npgsqlOptions.EnableRetryOnFailure(
             maxRetryCount: 5,
             maxRetryDelay: TimeSpan.FromSeconds(10),
-            errorCodesToAdd: null)));
+            errorCodesToAdd: null
+        )
+    )
+);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost3000",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:3000")
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
+
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -47,6 +62,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseRouting();
+app.UseCors("AllowLocalhost3000");
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();

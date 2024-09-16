@@ -10,6 +10,8 @@ namespace BlogFlow.Application.Dtos
         public required string Senha { get; set; }
         public DateTime DataCriacao { get; set; }
         [JsonIgnore]
+        public bool EhAdmin { get; set; } = false;
+        [JsonIgnore]
         public ICollection<PostagemDto> Postagens { get; set; } = new List<PostagemDto>();
     }
 }
