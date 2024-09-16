@@ -12,6 +12,6 @@ namespace BlogFlow.Domain.Entities
         public required string Conteudo { get; set; }
         public DateTime DataCriacao { get; set; }
         public int UsuarioId { get; set; }
-        public required Usuario Usuario { get; set; }
+        public Usuario? Usuario { get; set; }
     }
 }
