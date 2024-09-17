@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 Env.Load();
 
-var connectionString = $"Server={Environment.GetEnvironmentVariable("DB_HOST")};Database=blogflowdb;Username=postgres;Password={Environment.GetEnvironmentVariable("DB_PASSWORD")}";
+var connectionString = $"Host=localhost;Database=blogflowdb;Username=postgres;Password={Environment.GetEnvironmentVariable("DB_PASSWORD")}";
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connectionString,
         npgsqlOptions => npgsqlOptions.EnableRetryOnFailure(

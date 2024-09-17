@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import Spotlight from "@/components/spotlight";
+import api from '@/utils/axiosConfig';
 
 interface Postagem {
   id: number;
@@ -16,7 +16,7 @@ export default function Listar() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios
+    api
       .get("https://localhost:32775/api/Postagem/Listar")
       .then((response) => {
         setPostagens(response.data);
